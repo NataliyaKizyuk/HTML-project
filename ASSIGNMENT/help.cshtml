@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="webstyles.css">
+	<meta charset="utf-8" />
+	<title>My Assignment</title>
+</head>
+	<body>
+		<div id="wrapper">
+			<header><img src="logo.png" style="float:left;"><br><br><br>
+				<h1 style = "color:#333333; font-size:30">Mobile Phone Service Provider</h1><br><br>
+				<a href="home.html" class="button">Home</a>
+				<a href="shop.html" class="button">Shop</a>
+				<a href="help.html" class="button">Help</a>
+				<a href="http://freq.ie/mobile-coverage-map-ireland/" class="button">4G Map</a>
+				<a href="http://www.thejournal.ie/smartphones/news/" class="button">News</a>
+				<a href="login.html" class="button">Login</a> 
+				<a href="register.html" class="button">Register</a>
+			</header>
+			
+			<div id="sideBar" class ="main_page" >
+				<br></br><h2 style = "color:gray; font-size:30">DO YOU NEED HELP?</h2>
+				<p class = "f_right">
+					<h3>Having trouble signing in?</h3><br><br>
+					    <a href="changeUsername.php" class="title1"><img src="question.png"/> I don't know my password</a>
+					<input class="button2" type='submit' name='Submit' value='Click Here' onclick = "window.location.href ='http://localhost/assignment/selectFromUser.php'"/><br><br></br>
+					    <a href="changePassword.php" class="title1"><img src="question.png"/> I don't know my username</a>
+					<input class="button2" type='submit' name='Submit' value='Click Here' onclick = "window.location.href ='http://localhost/assignment/updateForm.php'"/><br><br></br>
+					    <a href="register.html" class="title1"><img src="question.png"/> I don't have an account yet</a>
+					<input class="button2" type='submit' name='Submit' value='Click Here'onclick = "window.location.href ='http://localhost/assignment/deleteForm.html'"/><br></br>
+					<br></br>
+					<form action = "EmailSend.cshtml" method = "post" class = "form1">
+					<label class = "label1" text = "strong">CONTACT  US: </label><br></br>
+					<label class = "label1" for="name" text = "strong">Your name:</label>
+					<input name="name" type="text" id="name" size="32"><br></br>
+					<label class = "label1" for="name" text = "strong">Your email:</label>
+					<input name="email" type="text" id="email" size="32"><br></br>
+					<textarea required="required" rows="5" cols="70" name = "comment" maxlength = "150" placeholder="Type your message here:"></textarea>
+					<p style ="margin-left:380px;"> 
+					<input class="button2" type='submit' name='' value="Send" />
+					</p>
+					</form>
+				</p><br></br>
+    		</div>
+
+		    <div id="mainContent"><br>
+				<div class="f_right">
+						<script>
+						  (function() { /*referense: https://cse.google.com/cse/create/new*/
+							var cx = '005845152589576555699:emkqbomxhxi';
+							var gcse = document.createElement('script');
+							gcse.type = 'text/javascript';
+							gcse.async = true;
+							gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(gcse, s);
+						  })();
+						</script>
+						<gcse:search></gcse:search> 
+						<br></br>
+						<img src="help.jpg"/>						
+				</div>
+			</div>
+		</div>
+	</body>
+		<footer style = "width: 70%; ">
+		<center>
+			<h5 style = "color:#A9D0F5;"> MyPhone Mobile Phone Service Provider</h5><br>
+			<a href="home.html" class="button">Home</a>
+			<a href="shop.html" class="button">Shop</a>
+			<a href="help.html" class="button">Help</a>
+			<a href="http://freq.ie/mobile-coverage-map-ireland/" class="button">4G Map</a>
+			<a href="http://www.thejournal.ie/smartphones/news/" class="button">News</a>
+			<a href="login.html" class="button">Login</a> 
+			<a href="register.html" class="button">Register</a>
+		<center>
+		</footer>
+</html>
